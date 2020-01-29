@@ -1,0 +1,48 @@
+### Sticky Menu: 3 method::::
+	1)  you use BT-4 Class ----> sticky-top
+		<section class="mainmenu-area sticky-top"> 
+			<div class="container"> 
+				<div class="row"> 
+					<div class="col-md-12"> 
+						<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Others</a></li>
+						<li><a href="">Videos</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	2) Jquery window scroll event:::
+		$(window).scroll(function(){
+			var scroll = $(window).scrollTop();
+			if (scroll >= 50) {
+				$(".mainmenu-area").addClass("is-stick");
+			} else{
+				$(".mainmenu-area").removeClass("is-stick");
+			}
+		});
+
+	           (CSS)    .mainmenu-area.is-stick {
+		     position: fixed;
+		     width: 100%;
+		     z-index: 2;
+		     }
+
+                  3) Jquery Sticky js Plugin:::
+	         Include JS:
+		   1) Jquery-3.4.1.min.js
+		   2) jquery.sticky.js
+
+	       (JS Active Code)
+		$(document).ready(function($){
+		         $('.mainmenu-area').sticky();
+		});
+
+	       (CSS)    .is-sticky {
+		position: relative;
+		z-index: 999;
+		}

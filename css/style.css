@@ -1,0 +1,79 @@
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: ;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:hover{
+	text-decoration: none;
+}
+/* Main CSS Stop */
+/* Sticky Menu section start */
+.mainmenu-area ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mainmenu-area ul li {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.mainmenu-area ul li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+}
+.mainmenu-area {
+  background-color: #4c4b8a;
+}
+/* Jquery Sticky code start */
+.is-sticky {
+	position: relative;
+	z-index: 999;
+}
+/* Jquery Sticky code start */
+/* Sticky Menu section stop */
+/* Over container use section start */
+.section-title {
+  text-align: center;
+  margin-bottom: 130px;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: #4c4b8a;
+  font-weight: 400;
+}
+body {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #979797;
+}
+.features-wrap {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 130px;
+}
+img.hand-absolute {
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+}
+h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.features-area {
+	padding-top: 100px;
+	background: lightyellow;
+}
+/* Over container use section Stop */
